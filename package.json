@@ -1,0 +1,10 @@
+{
+  "name": "generator",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "filter" : "index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
