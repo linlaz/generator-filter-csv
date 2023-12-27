@@ -26,7 +26,6 @@ function processCsvDirectory(directory, startTime, endTime) {
       if (path.extname(file).toLowerCase() === ".csv") {
         const filePath = path.join(directory, file);
         const data = fs.readFileSync(filePath, "utf8").split("\n");
-        console.time(`${index}`)
         data.forEach((line) => {
           if (line.trim() !== "") {
             const [id, timestamp, trasaction, amount] = line.split(",");
@@ -36,7 +35,6 @@ function processCsvDirectory(directory, startTime, endTime) {
             }
           }
         });
-        console.timeEnd(`${index}`)
       }
     });
     generateCsv(filteredData);
