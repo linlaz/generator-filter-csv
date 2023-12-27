@@ -13,9 +13,6 @@ git clone https://github.com/linlaz/generator-filter-csv.git
 cd generator-filter-csv
 ```
 ```bash
-npm install
-```
-```bash
 npm install -g .
 ```
 
